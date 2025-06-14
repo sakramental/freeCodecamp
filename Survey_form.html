@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Kyokushinkai Karate Survey Form</title>
+  </head>
+  <body style="background-color: azure">
+    <h1 id="title">Kyokushinkai Karate Survey Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    <form id="survey-form" method="post" action="https://register-demo.freecodecamp.org">
+     <fieldset>
+       <legend> Your personality:</legend>
+        <label for="name">First Name:</label> 
+        <input id="name" name="first-name" type="text" placeholder="Enter Your First Name" required /><br>
+        <label for="last-name" id="name-label">Last Name:</label> 
+        <input id="last-name" name="last-name" type="text" placeholder="Enter Your Last Name" required /><br>
+        <label for="number" id="number-label">Input your age (years):</label> 
+        <input id="number" type="number" name="age" min="5" max="120" placeholder="Enter Your age" value="Age" style="width: 150px;"/><br>
+        <label for="email" id="email-label">Email:</label> 
+        <input id="email" name="email" type="email" placeholder="Enter Your e-mail" required /><br>
+         <label for="dropdown">Select Your current role</label>
+          <select id="dropdown" name="dropdown">
+            <option value="">Select current role</option>
+            <option value="1">Student</option>
+            <option value="2">Full Time Job</option>
+            <option value="3">Full Time Trainer</option>
+            <option value="4">Other</option>
+          </select>        
+      </fieldset>
+      <fieldset>
+        <legend>To which Kyokushin organisation do you belong?</legend>
+        <input id="organisation" type="radio" name="organisation-type" class="inline" value="organisation" checked />
+        <label for="organisation">IKO</label>
+          <br>
+        <input id="organisation" type="radio" name="organisation-type" class="inline" value="organisation"/>
+        <label for="organisation">Kyokushin-Kan </label>
+         <br>
+        <input id="organisation" type="radio" name="organisation-type" class="inline" value="organisation"/>
+        <label for="organisation">Shinkyokushin (WKO) </label>
+         <br>
+        <input id="organisation" type="radio" name="organisation-type" class="inline" value="organisation"/>
+        <label for="organisation">IFK </label>
+         <br>
+        <input id="organisation" type="radio" name="organisation-type" class="inline" value="organisation"/>
+        <label for="organisation">KWU </label>
+         <br>
+        <input id="organisation" type="radio" name="organisation-type" class="inline" value="organisation"/>
+        <label for="organisation">Other </label>
+                 
+      </fieldset>
+      <fieldset>
+        <legend>Your training achievents:</legend>
+         <label for="years-of-training">How many years are You training Kyoukushin?</label>
+         <input id="years-of-training" type="number" name="years-of training" min="0" max="120" /><br>
+         <label for="belts">Your belt/KU or DAN</label>
+          <select id="belts" name="belts">
+            <option value="">(select one)</option>
+            <option value="1"> white/without any KU </option>
+            <option value="2">orange/10 or 9 KU</option>
+            <option value="3">blue/8 or 7 KU</option>
+            <option value="4">yellow/6 or 5 KU</option>
+            <option value="5">green/4 or 3 KU</option>
+            <option value="6">brown/2 or 1 KU</option>
+            <option value="7">black/senpai/1 or 2 DAN</option>
+            <option value="8">black/sensei/3 or 4 DAN</option>
+            <option value="9">black/shihan/5 DAN or higher</option>
+          </select>
+        
+        </fieldset>
+        <fieldset>
+        <legend>What do You like in trainings more?</legend>
+            <input id="kata" type="checkbox" name="kata" value="Kata"> <label for="kata">Kata/Kihon</label><br>
+            <input id="kumite" type="checkbox" name="kumite" value="kumite"> 
+            <label for="kumite" >Kumite</label><br>
+            <input id="selfdefence" type="checkbox" name="selfdefence" value="selfdefence"> 
+            <label for="energetic">Selfdefence</label><br>
+            <input id="development" type="checkbox" name="development" value="development"> 
+            <label for="development">Gradual self-development </label><br>
+            <input id="other" type="checkbox" name="other" value="other"> 
+            <label for="other">Other (I will write below)</label><br>
+             <textarea id="writing" name="comments" rows="3" cols="30" placeholder="I like in Kyokushinkai Karate training..."></textarea>
+        </fieldset>
+      <fieldset>
+         <legend> Do you take part in any competitions? </legend>
+         <input id="do" type="radio" name="competition" value="competition" checked>
+         <label for=""do"">Yes, I do </label><br>
+         <input id="dont" type="radio" name="competition" value="competition">
+         <label for="dont"> No, I don't </label>
+      </fieldset>
+         <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" value="terms-and-conditions"/> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a> of this site
+      </label>
+        <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
+        
