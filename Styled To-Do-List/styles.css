@@ -1,0 +1,58 @@
+body {
+    background: linear-gradient(green, blue);
+    height: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    font-size: 35px;
+    color: #19194a;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.todo-list {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    list-style-type: none;
+    list-style-position: outside;
+}
+
+.todo-list > li {
+    border: 1px solid blueviolet;
+    border-radius: 15px;
+    margin: 10px;
+    background-color: beige;
+    height: 80px;
+    padding: 5px;
+
+}
+
+.sub-item {
+    text-align: center;
+    margin-top: 10px;
+}
+
+a {
+    color: #055e05;
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: #570c2e;
+}
+
+a:visited {
+    color:aquamarine
+}
+
+a:focus {
+    border: 1px solid black;
+    background-color: grey
+}
+a:active {
+    color: #570c2e;
+}
