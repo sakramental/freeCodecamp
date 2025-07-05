@@ -1,0 +1,116 @@
+body {
+    background-color:antiquewhite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    box-shadow: -3px -3px 5px 5px inset rgb(206, 198, 186);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30%;
+    font-size: 3rem;
+    text-decoration:underline;
+    color:rgb(5, 36, 78)
+}
+
+form {
+    display: block;
+    color:rgb(69, 21, 21);
+    font-size: 1.5em;
+}
+
+form input {
+    display: inline-block;
+    margin: 3% auto;
+}
+
+select {
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    color:rgb(11, 49, 103);
+    display: block;
+    margin: 3% auto;
+}
+
+fieldset {
+    border: none;
+    cursor: pointer;
+}
+
+.radio-group input {
+    display: inline;
+    margin-left: 50px;
+}
+
+.radio-group label {
+    cursor: pointer;
+    font-size: .9em;
+}
+
+textarea {
+    width: 90vw;
+    height: 10vh;
+    min-width: 30vw;
+    min-height: 5vh;
+    display: block;
+    margin: 20px auto;
+}
+
+button {
+    background-color: rgb(79, 79, 147);
+    color: whitesmoke;
+    display: block;
+    margin: 3em auto;
+    width: 15em;
+    height: 4em;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px indigo;
+}
+
+
+input, textarea {
+    border: 2px solid yellow;
+}
+
+input:focus, textarea:focus {
+    border: 2px solid rgb(155, 167, 155);
+}
+
+
+input:invalid, select:invalid, textarea:invalid {
+    border-color: red;
+}
+
+input:valid, select:valid, textarea:valid {
+    border-color: green;
+}
+
+button:hover {
+    background-color:rgb(26, 136, 205);
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.radio-group input[type="radio"]:checked {
+    border-color:rgb(205, 90, 24);
+    background-color: violet;
+    box-shadow: 1px 1px 1px 1px inset blueviolet;
+}
+
+.radio-group input[type="radio"]:checked + label {
+    color: #0066ff;
+    font-weight: bold;
+}
+
+input:first-of-type {
+    border-radius: 5px;
+}
+
+select:last-child:checked {
+    color: rgb(167, 6, 6);
+}
