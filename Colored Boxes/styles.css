@@ -1,0 +1,36 @@
+body {
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.color-box {
+    display: inline-block;
+    justify-content: center;
+    margin: 15% .7rem;
+    width: 100px;
+    height: 100px;
+}
+
+.color1 {
+    background-color: #9e230a;
+}
+
+.color2 {
+    background-color: rgb(12, 189, 109);
+}
+
+.color3 {
+    background-color: green;
+}
+
+.color4 {
+    background-color: hsl(45, 61%, 35%);
+}
+
+.color5 {
+    background-color: black;
+}
