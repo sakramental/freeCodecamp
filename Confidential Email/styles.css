@@ -1,0 +1,42 @@
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(53, 58, 24);
+}
+
+#email {
+    box-sizing: border-box;
+    padding: 50px;
+    margin-top: 50px;
+    width: 500px;
+    border: 2px solid rgb(92, 11, 11);
+    background-image: url(https://i.pinimg.com/originals/04/9c/42/049c428069d74da7d513c2f95b0df588.jpg);
+
+}
+
+#confidential, #top-secret {
+    display: inline-block;
+    padding: 2px;
+    margin-left: 2px;
+    border: 2px solid red;
+    color: red;
+}
+
+#confidential {
+    transform: rotate(45deg) translateX(300px) scale(2);
+}
+
+#top-secret {
+    transform: rotate(74deg) translateX(550px) scale(2);
+    margin-top: 100px;
+}
+
+.blurred {
+    filter: blur(3px);
+}
+
+#wisher {
+    font-style: italic;
+    text-align: right;
+    margin-top: 30px;
+    color: #aaa;
+}
