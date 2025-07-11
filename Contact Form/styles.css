@@ -1,0 +1,55 @@
+body {
+    background: linear-gradient(to right, #78b2de ,#7b6352);
+    font-family: Tahoma;
+    color: white;
+}
+
+.form-container {
+    background-color: rgba(28, 104, 79, 0.475);
+    border-radius: 7px;
+    padding: 1rem;
+    width: 70%;
+    margin: 30vh auto;
+}
+
+input {
+    width: 90%;
+    
+    height: 1em;
+}
+
+h2, h3 {
+    text-align: center;
+    color: #0e2638
+}
+
+label {
+    margin: auto;
+    color: #2f156c;
+    display: inline;
+}
+
+input, textarea {,
+    width: 80%;
+    padding: 1em;
+    display: block;
+    background-color: #084930;
+    margin: 1em auto;
+}
+
+textarea {
+    width: 300px;
+    padding: 5px;
+    margin-bottom: 3px;
+}
+
+button {
+    background-color: blanchedalmond;
+    font-size: 2em;
+    display: block;
+    margin: 1em auto;
+}
+
+button:hover {
+    background-color: aqua;
+}
