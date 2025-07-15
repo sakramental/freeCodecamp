@@ -1,0 +1,71 @@
+img{
+  display: block;
+}
+
+#image{
+  max-width: 100%;
+}
+
+#img-caption{
+  display: block;
+  text-align: center;
+  margin: auto;
+  background-color: #769fcd;
+}
+
+h1, h2{
+  font-family: Tahoma sans-serif;
+  color: #573f2f;
+}
+
+h2{
+  font-size: 20px;
+}
+
+#img-caption{
+  background-color: ;
+}
+
+h3{
+  font-famili: Times New Roman;
+  margin-left: 15px;
+  text-decoration: underline;
+}
+
+#history-field{
+  color: #711d04;
+  border-top: 5px solid;
+  border-bottom: 5px solid;
+  border-right: none;
+  border-left: none;
+}
+
+#tribute-info{
+  border: none;
+  margin-top: 0;
+  margin-bottom: -27px;
+  text-align: center;
+  font-style: italic;
+  background-color: #769fcd;
+}
+
+#creator{
+  fornt-famliy: sans-serif;
+  text-align: center;
+  border-top: 5px solid #711d04;
+}
+
+main{
+  background-color: #d6e6f2;
+}
+
+li {
+  list-style: none;
+}
+
+li::before {
+  content: '👊';
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+
