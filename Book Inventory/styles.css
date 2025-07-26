@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+} 
+
+body {
+    background-color: rgba(135, 240, 208, 0.607);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(18, 53, 158);
+    margin: 10% 0 10% 0;
+}
+
+table {
+    margin: 0 auto 0 auto;    
+    border-radius: 15px;
+    font-size: 1rem;
+    min-width: 700px;
+    box-shadow: 8px 5px 5px rgb(202, 179, 179), 
+    -8px -5px 5px rgb(202, 179, 179);
+}
+
+thead {
+    background-color:rgb(18, 53, 158);
+    color: rgb(227, 122, 203);
+    
+}
+
+th {
+    box-shadow: 2px 1px 1px rgb(168, 115, 225);
+}
+
+tr {
+    height: 3rem;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(176, 176, 176);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(207, 179, 179);
+}
+
+td {
+    padding-left: 10px;
+    box-shadow: 2px 1px 1px rgb(168, 115, 225);
+}
+
+tr[class="read"] {
+    background: linear-gradient(rgb(50, 224, 50), rgb(23, 97, 39));
+}
+
+tr[class="in-progress"] {
+    background: linear-gradient(rgb(176, 112, 224), rgb(86, 35, 105));
+}
+
+tr[class="to-read"] {
+    background: linear-gradient(rgb(62, 216, 230), rgb(37, 106, 135));
+}
+
+span {
+    display: inline-block;
+}
+
+tr[class="to-read"] span[class="status"]  {
+    background-image: url(https://i.pinimg.com/originals/33/a6/91/33a691252b9b55c294f03344cbb70042.jpg);
+    border: 2px solid red;
+}
+
+tr[class="read"] span[class="status"]  {
+    background-image: url(https://i.pinimg.com/originals/40/b9/3e/40b93e9aec9684583f1c1d43e8802c74.jpg);
+    border: 2px solid red;
+}
+
+tr[class="in-progress"] span[class="status"]  {
+    background-image: url(https://image.winudf.com/v2/image/Y29tLnN5enlneS5ncmF5X3NjcmVlbnNob3RzXzNfZmMwNmJjZmI/screen-3.jpg?fakeurl=1&type=.jpg);
+    border: 2px solid red;
+}
+
+span[class="status"], span[class^="rate"] {
+    height: 80%;
+    width: 100px;
+    padding: 3px 8px;
+    text-align: center;
+}
+
+span[class^="rate"] > span {
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: auto;
+    width: 25px;
+    height: 25px;
+    background-color: rgba(81, 80, 71, 0.5);
+}
+
+span[class~="one"] > span:first-child {
+    background-image: linear-gradient(rgb(229, 241, 70), rgb(155, 164, 35));
+}
+
+span[class~="two"] > :nth-child(-n+2) {
+    background-image: linear-gradient(rgb(228, 210, 112), rgb(99, 92, 9));
+}
+
+span[class~="three"] span {
+    background-image: linear-gradient(rgb(228, 210, 112), rgb(99, 92, 9));
+}
