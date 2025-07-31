@@ -1,0 +1,97 @@
+main {
+    box-sizing: border-box;
+    background-color: aliceblue;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.magazine-cover {
+    display: grid;
+    grid-template-areas: 
+    "title title title"
+    "feature-article feature-article cover-image"
+    "small-article1 small-article2 cover-image";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    grid-auto-rows: minmax(300px, auto);
+    row-gap: 10px;
+    column-gap: 10px;
+    width: 100%;
+}
+
+.title {
+    grid-area: title;    
+}
+
+.title, h2, h1 {
+    background-color: rgb(11, 11, 84);
+    color: rgb(216, 204, 76);
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.feature-article {
+    grid-area: feature-article;
+}
+
+.cover-image {
+    grid-area: cover-image;
+    width: 100%;
+    margin: auto;
+}
+
+.small-article1 {
+    grid-area: small-article1;
+}
+
+.small-article2 {
+    grid-area:small-article2;
+    margin: auto;
+    background-color: antiquewhite;
+    color:rgb(34, 34, 207);
+}
+
+img {
+    width: 300px;
+}
+
+blockquote {
+    letter-spacing: 2px;
+    font-style: italic;
+}
+
+blockquote::before {
+    content: '"'
+}
+
+blockquote::after {
+    content: '"'
+}
+
+h4 {
+    padding-left: 2rem;
+    color: black;
+}
+
+@media screen and (max-width: 1024px) {
+    .magazine-cover {
+    display: grid;
+    grid-template-areas: 
+    "title title title"
+    ". cover-image ."
+    "feature-article feature-article feature-article"
+    "small-article1 small-article2";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    width: 100%;
+}
+.cover-image {
+    grid-area: cover-image;
+    width: 200px;
+    margin: auto;
+}
+}
