@@ -1,0 +1,81 @@
+@media screen(min-width: 576px) and (max-width: 1199.98px){
+  main { 
+    width: 800px;
+}
+
+}
+
+
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+main{
+  position: flex;
+  right: 0; 
+}
+
+.navbar{
+    background-color: #fffbd3;
+    padding-top: 50px;
+    margin-top: 0;
+    position: fixed;
+    top: 0;
+    width: 20%;
+    min-width: 180px;
+    height: 100%;
+    font-size: 20px;
+    text-align: center;
+    border-right: 3px solid #090974;
+    overflow: hidden;
+
+}
+
+.main-section{
+   padding: 20px 3px 10px 180px;
+   background-color: #fffddb;
+   width: 100%;
+}
+
+fieldset{
+  border: None;
+}
+
+.logo{
+  position: absolute;
+  top: 6px;
+  left: 67px;
+  width: 40px;
+}
+
+h3{
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+h4{
+  font-style: italic;
+}
+
+section header {
+  font-size: 1.3rem;
+  text-decoration: underline;
+  color: rgb(52, 11, 122)
+}
+
+code{
+  text-decoration: underline;
+}
+
+.links{
+  border-bottom: 3px solid #440875;
+  display: block;
+  padding: 3px 15px;
+}
+
+.links:hover {
+    transform: scale(1.1);
+}
+
+
