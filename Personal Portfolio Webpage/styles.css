@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, rgb(11, 132, 231), rgb(100, 218, 135), rgb(213, 122, 122));
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+#welcome-section, #project-section, #contacts-section {
+  height: 100vh;
+  text-align: center;
+
+}
+
+#welcome-section div {
+  font-size: 1.33em;
+  padding-top: 10rem; 
+  color: rgb(48, 10, 58);
+}
+
+#project-section {
+  background-color: rgb(17, 167, 142);
+  color: rgb(12, 4, 86);
+}
+
+#project-section h1 {
+  padding: 30% 2vw 10%;
+}
+
+#project-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 5%;
+  grid-auto-rows: 10rem;
+}
+
+#project-section img {  
+  width: 100px;
+  aspect-ratio: 16/9;
+}
+
+#navbar{
+  position: sticky;
+  top: 0;
+  height: 8%;
+  background-color: rgb(132, 21, 155);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;  
+  gap: 10px;
+}
+
+
+@media{
+
+}
